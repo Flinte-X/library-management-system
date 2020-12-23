@@ -1,7 +1,10 @@
 <div class="wrapper">
 
-  <div >
-    <h1 style="padding: 5px; margin-left: 120px;" >Library Management System</h1>
+  <div class="d-flex justify-content-between" >
+    <h1 style="padding: 5px 0; margin-left: 115px;" >Library Management System</h1>
+    <div class="align-self-center" *ngIf="UI === 'user-dashboard' || UI === 'admin-dashboard'">
+      <button class="btn btn-danger">Log Me Out</button>
+    </div>
   </div>
 
   <!-- Navbar -->
@@ -23,7 +26,7 @@
               </li>
             </ul>
           </div>
-          <div *ngSwitchCase="'admin-login'">
+          <div *ngSwitchCase="'admin-dashboard'">
             <ul class="navbar-nav" >
               <li class="nav-item">
                 <a href="#" class="nav-link">DASHBOARD</a>
@@ -64,7 +67,7 @@
               </li>
             </ul>
           </div>
-          <div *ngSwitchCase="'user-login'">
+          <div *ngSwitchCase="'user-dashboard'">
             <ul class="navbar-nav" >
               <li class="nav-item">
                 <a href="#" class="nav-link">DASHBOARD</a>

@@ -4,11 +4,13 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import {UserSignupComponent} from './user-signup/user-signup.component';
 import {AdminLoginComponent} from './admin-login/admin-login.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {UserDashbaordComponent} from './user-dashbaord/user-dashbaord.component';
 
 const routes: Routes = [
   { path: 'user-login', component: UserLoginComponent},
   { path: 'user-signup', component: UserSignupComponent},
   { path: 'admin-login', component: AdminLoginComponent},
+  { path: 'user-dashboard', component: UserDashbaordComponent},
   { path: '', redirectTo: '/admin-login', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent}
 ];
