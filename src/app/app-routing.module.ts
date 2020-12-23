@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserLoginComponent } from './user-login/user-login.component';
 import {UserSignupComponent} from './user-signup/user-signup.component';
 import {AdminLoginComponent} from './admin-login/admin-login.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'user-login', component: UserLoginComponent},
   { path: 'user-signup', component: UserSignupComponent},
   { path: 'admin-login', component: AdminLoginComponent},
-  { path: '', redirectTo: '/admin-login', pathMatch: 'full'}
+  { path: '', redirectTo: '/admin-login', pathMatch: 'full'},
+  { path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
