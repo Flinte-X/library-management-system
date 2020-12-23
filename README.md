@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Version
 
-0.0.1
+0.1.0
 
 ### LICENSE
 
