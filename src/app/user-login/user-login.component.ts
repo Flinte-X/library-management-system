@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-login.component.scss']
 })
 export class UserLoginComponent implements OnInit {
-
+  public UI = 'common';
   constructor() { }
 
   ngOnInit(): void {

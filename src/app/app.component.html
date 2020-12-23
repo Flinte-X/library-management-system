@@ -23,7 +23,7 @@
               </li>
             </ul>
           </div>
-          <div *ngSwitchCase="'user-login'">
+          <div *ngSwitchCase="'admin-login'">
             <ul class="navbar-nav" >
               <li class="nav-item">
                 <a href="#" class="nav-link">DASHBOARD</a>
@@ -64,7 +64,7 @@
               </li>
             </ul>
           </div>
-          <div *ngSwitchCase="'admin-login'">
+          <div *ngSwitchCase="'user-login'">
             <ul class="navbar-nav" >
               <li class="nav-item">
                 <a href="#" class="nav-link">DASHBOARD</a>
@@ -93,7 +93,7 @@
     <!-- Main content -->
     <div class="content">
       <div class="container">
-      <router-outlet></router-outlet>
+      <router-outlet (activate)="onActivate($event)"></router-outlet>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
