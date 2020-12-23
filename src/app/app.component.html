@@ -11,13 +11,13 @@
         <!-- Left navbar links -->
         <ul class="navbar-nav" >
           <li class="nav-item">
-            <a href="#" class="nav-link">ADMIN LOGIN</a>
+            <a routerLink="/admin-login" href="#" class="nav-link">ADMIN LOGIN</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">USER SIGNUP</a>
+            <a routerLink="/user-signup" href="#" class="nav-link">USER SIGNUP</a>
           </li>
           <li class="nav-item" >
-            <a href="#" class="nav-link" >USER LOGIN</a>
+            <a routerLink="/user-login"  href="#" class="nav-link" >USER LOGIN</a>
           </li>
         </ul>
       </div>
@@ -36,8 +36,7 @@
     <!-- Main content -->
     <div class="content">
       <div class="container">
-              <h2>insert content</h2>
-<!--              todo: remove h2 and insert login, signup forms here-->
+      <router-outlet></router-outlet>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
