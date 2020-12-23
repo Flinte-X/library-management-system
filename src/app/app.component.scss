@@ -1,0 +1,11 @@
+nav{
+  background-color: #ebeee6;
+  border-bottom: #7c88ee 3px solid;
+  border-top: lightgray 1px solid;
+
+  .nav-item{
+    &:hover{
+      background-color: lightgray;
+    }
+  }
+}
