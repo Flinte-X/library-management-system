@@ -9,17 +9,79 @@
     <div class="container">
       <div class="collapse navbar-collapse order-3 justify-content-end" id="navbarCollapse">
         <!-- Left navbar links -->
-        <ul class="navbar-nav" >
-          <li class="nav-item">
-            <a routerLink="/admin-login" href="#" class="nav-link">ADMIN LOGIN</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/user-signup" href="#" class="nav-link">USER SIGNUP</a>
-          </li>
-          <li class="nav-item" >
-            <a routerLink="/user-login"  href="#" class="nav-link" >USER LOGIN</a>
-          </li>
-        </ul>
+        <div [ngSwitch]="UI">
+          <div *ngSwitchCase="'common'">
+            <ul class="navbar-nav" >
+              <li class="nav-item">
+                <a routerLink="/admin-login" routerLinkActive="active"  class="nav-link">ADMIN LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/user-signup" routerLinkActive="active"  class="nav-link">USER SIGNUP</a>
+              </li>
+              <li class="nav-item" >
+                <a routerLink="/user-login" routerLinkActive="active" class="nav-link" >USER LOGIN</a>
+              </li>
+            </ul>
+          </div>
+          <div *ngSwitchCase="'admin-login'">
+            <ul class="navbar-nav" >
+              <li class="nav-item">
+                <a href="#" class="nav-link">DASHBOARD</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="categories-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">CATEGORIES</a>
+                <ul aria-labelledby="categories-dropdown" class="dropdown-menu border-0 shadow">
+                  <li><a href="#" class="dropdown-item">ADD CATEGORY</a></li>
+                  <li><a href="#" class="dropdown-item">MANAGE CATEGORY</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="authors-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">AUTHORS</a>
+                <ul aria-labelledby="authors-dropdown" class="dropdown-menu border-0 shadow">
+                  <li><a href="#" class="dropdown-item">ADD AUTHOR</a></li>
+                  <li><a href="#" class="dropdown-item">MANAGE AUTHORS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="books-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">BOOKS</a>
+                <ul aria-labelledby="books-dropdown" class="dropdown-menu border-0 shadow">
+                  <li><a href="#" class="dropdown-item">ADD BOOKS</a></li>
+                  <li><a href="#" class="dropdown-item">MANAGE BOOKS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="issue-books-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">ISSUE BOOKS</a>
+                <ul aria-labelledby="issue-books-dropdown" class="dropdown-menu border-0 shadow">
+                  <li><a href="#" class="dropdown-item">ISSUE NEW BOOK</a></li>
+                  <li><a href="#" class="dropdown-item">MANAGE ISSUED BOOKS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">REG STUDENTS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">CHANGE PASSWORD</a>
+              </li>
+            </ul>
+          </div>
+          <div *ngSwitchCase="'user-login'">
+            <ul class="navbar-nav" >
+              <li class="nav-item">
+                <a href="#" class="nav-link">DASHBOARD</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="account-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">ACCOUNT</a>
+                <ul aria-labelledby="account-dropdown" class="dropdown-menu border-0 shadow">
+                  <li><a href="#" class="dropdown-item">MY PROFILE</a></li>
+                  <li><a href="#" class="dropdown-item">CHANGE PASSWORD</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" >
+                <a href="#" class="nav-link" >ISSUED BOOKS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -28,15 +90,10 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-          <h2>If need content header</h2>
-<!--          todo: remove h2 and add content header if required-->
-    <!-- /.content-header -->
-
     <!-- Main content -->
     <div class="content">
       <div class="container">
-      <router-outlet></router-outlet>
+      <router-outlet (activate)="onActivate($event)"></router-outlet>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->

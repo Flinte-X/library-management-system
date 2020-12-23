@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-admin-login',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-login.component.scss']
 })
 export class AdminLoginComponent implements OnInit {
-
+  public UI = 'common';
   constructor() { }
 
   ngOnInit(): void {
