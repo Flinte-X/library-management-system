@@ -6,7 +6,7 @@
     <div class="card-body register-card-body">
       <p class="login-box-msg">Register a new membership</p>
 
-      <form action="../../index.html" method="post">
+      <form method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Full name">
           <div class="input-group-append">
@@ -47,19 +47,19 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button routerLink="/user-login" type="button" class="btn btn-primary btn-block">Register</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
       <div class="social-auth-links text-center">
-        <label for="">Verification code : </label>
-        <label for="" style="margin-left: 5px; background-color: aqua">1234</label>
-        <input type="text">
+        <label for="signup-verification">Verification code : </label>
+        <label for="signup-verification" style="margin-left: 5px; background-color: aqua">1234</label>
+        <input id="signup-verification" type="text">
       </div>
 
-      <a href="login.html" class="text-center justify-content-center d-flex">I already have a membership</a>
+      <a routerLink="/user-login" class="text-center justify-content-center d-flex">I already have a membership</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

@@ -8,7 +8,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Login to see your records</p>
 
-      <form action="../../index3.html" method="post">
+      <form method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
@@ -33,12 +33,12 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button routerLink="/user-dashboard" type="button" class="btn btn-primary btn-block">Sign In</button>
           </div>
           <div class="social-auth-links text-center mb-3">
-            <label for="">Verification code : </label>
-            <label for="" style="margin-left: 10px; background-color: aqua">1234</label>
-            <input type="text">
+            <label for="user-login-verification">Verification code : </label>
+            <label for="user-login-verification" style="margin-left: 10px; background-color: aqua">1234</label>
+            <input id="user-login-verification" type="text">
           </div>
 
           <!-- /.col -->
@@ -46,7 +46,7 @@
       </form>
       <hr>
       <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
+        <a href="#">I forgot my password</a>
       </p>
     </div>
     <!-- /.login-card-body -->
