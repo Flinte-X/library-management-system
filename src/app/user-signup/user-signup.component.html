@@ -47,7 +47,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button routerLink="/user-login" type="button" class="btn btn-primary btn-block">Register</button>
+            <button (click)="gotoUserLogin()" type="button" class="btn btn-primary btn-block">Register</button>
           </div>
           <!-- /.col -->
         </div>
@@ -59,7 +59,7 @@
         <input id="signup-verification" type="text">
       </div>
 
-      <a routerLink="/user-login" class="text-center justify-content-center d-flex">I already have a membership</a>
+      <a (click)="gotoUserLogin()" class="text-center justify-content-center d-flex">I already have a membership</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

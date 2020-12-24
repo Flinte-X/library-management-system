@@ -1,0 +1,39 @@
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse order-3 justify-content-end" id="navbarCollapse">
+      <!-- Left navbar links -->
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <a (click)="gotoUserDashboard()" class="nav-link">DASHBOARD</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="account-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">ACCOUNT</a>
+            <ul aria-labelledby="account-dropdown" class="dropdown-menu border-0 shadow">
+              <li><a href="#" class="dropdown-item">MY PROFILE</a></li>
+              <li><a href="#" class="dropdown-item">CHANGE PASSWORD</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" >
+            <a (click)="gotoIssuedBooks()" class="nav-link" >ISSUED BOOKS</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<!-- /.navbar -->
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Main content -->
+  <div class="content">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
