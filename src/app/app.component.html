@@ -2,11 +2,11 @@
 
   <div class="d-flex justify-content-between" >
     <h1 style="padding: 5px 0; margin-left: 115px;" >Library Management System</h1>
-<!--    <div class="align-self-center" *ngIf="UI === 'user-dashboard' || UI === 'admin-dashboard'">-->
-<!--      <button routerLink="/admin-login" class="btn btn-danger">Log Me Out</button>-->
-<!--    </div>-->
+    <div class="align-self-center" *ngIf="UI === 'user' || UI === 'admin'">
+      <button routerLink="login/user-login" class="btn btn-danger">Log Me Out</button>
+    </div>
   </div>
-  <router-outlet></router-outlet>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->

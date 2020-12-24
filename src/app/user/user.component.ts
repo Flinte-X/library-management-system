@@ -7,7 +7,7 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent implements OnInit {
-
+  public UI = 'user';
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
