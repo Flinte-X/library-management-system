@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
 import { UserDashbaordComponent } from './user-dashbaord/user-dashbaord.component';
 import { AdminDashbaordComponent } from './admin-dashbaord/admin-dashbaord.component';
+import { AdminComponent } from './admin/admin.component';
+import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +15,9 @@ import { AdminDashbaordComponent } from './admin-dashbaord/admin-dashbaord.compo
     routingComponents,
     UserDashbaordComponent,
     AdminDashbaordComponent,
+    AdminComponent,
+    UserComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

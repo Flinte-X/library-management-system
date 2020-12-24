@@ -1,0 +1,63 @@
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse order-3 justify-content-end" id="navbarCollapse">
+      <!-- Left navbar links -->
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <a href="#" class="nav-link">DASHBOARD</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="categories-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">CATEGORIES</a>
+            <ul aria-labelledby="categories-dropdown" class="dropdown-menu border-0 shadow">
+              <li><a href="#" class="dropdown-item">ADD CATEGORY</a></li>
+              <li><a href="#" class="dropdown-item">MANAGE CATEGORY</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="authors-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">AUTHORS</a>
+            <ul aria-labelledby="authors-dropdown" class="dropdown-menu border-0 shadow">
+              <li><a href="#" class="dropdown-item">ADD AUTHOR</a></li>
+              <li><a href="#" class="dropdown-item">MANAGE AUTHORS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="books-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">BOOKS</a>
+            <ul aria-labelledby="books-dropdown" class="dropdown-menu border-0 shadow">
+              <li><a href="#" class="dropdown-item">ADD BOOKS</a></li>
+              <li><a href="#" class="dropdown-item">MANAGE BOOKS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="issue-books-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">ISSUE BOOKS</a>
+            <ul aria-labelledby="issue-books-dropdown" class="dropdown-menu border-0 shadow">
+              <li><a href="#" class="dropdown-item">ISSUE NEW BOOK</a></li>
+              <li><a href="#" class="dropdown-item">MANAGE ISSUED BOOKS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">REG STUDENTS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">CHANGE PASSWORD</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<!-- /.navbar -->
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Main content -->
+  <div class="content">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

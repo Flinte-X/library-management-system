@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-dashbaord.component.scss']
 })
 export class AdminDashbaordComponent implements OnInit {
-  public UI = 'admin-dashboard';
+  public UI = 'admin';
   constructor() { }
 
   ngOnInit(): void {
