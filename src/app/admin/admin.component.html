@@ -8,41 +8,41 @@
       <!-- Left navbar links -->
         <ul class="navbar-nav" >
           <li class="nav-item">
-            <a href="#" class="nav-link">DASHBOARD</a>
+            <a (click)="gotoAdminDashboard()" class="nav-link">DASHBOARD</a>
           </li>
           <li class="nav-item dropdown">
             <a id="categories-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">CATEGORIES</a>
             <ul aria-labelledby="categories-dropdown" class="dropdown-menu border-0 shadow">
-              <li><a href="#" class="dropdown-item">ADD CATEGORY</a></li>
-              <li><a href="#" class="dropdown-item">MANAGE CATEGORY</a></li>
+              <li><a (click)="gotoAddCategory()" class="dropdown-item">ADD CATEGORY</a></li>
+              <li><a (click)="gotoManageCategory()" class="dropdown-item">MANAGE CATEGORY</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a id="authors-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">AUTHORS</a>
             <ul aria-labelledby="authors-dropdown" class="dropdown-menu border-0 shadow">
-              <li><a href="#" class="dropdown-item">ADD AUTHOR</a></li>
-              <li><a href="#" class="dropdown-item">MANAGE AUTHORS</a></li>
+              <li><a (click)="gotoAddAuthor()" class="dropdown-item">ADD AUTHOR</a></li>
+              <li><a (click)="gotoManageAuthor()" class="dropdown-item">MANAGE AUTHORS</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a id="books-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">BOOKS</a>
             <ul aria-labelledby="books-dropdown" class="dropdown-menu border-0 shadow">
-              <li><a href="#" class="dropdown-item">ADD BOOKS</a></li>
-              <li><a href="#" class="dropdown-item">MANAGE BOOKS</a></li>
+              <li><a (click)="gotoAddBook()" class="dropdown-item">ADD BOOK</a></li>
+              <li><a (click)="gotoManageBook()" class="dropdown-item">MANAGE BOOKS</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a id="issue-books-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">ISSUE BOOKS</a>
             <ul aria-labelledby="issue-books-dropdown" class="dropdown-menu border-0 shadow">
-              <li><a href="#" class="dropdown-item">ISSUE NEW BOOK</a></li>
-              <li><a href="#" class="dropdown-item">MANAGE ISSUED BOOKS</a></li>
+              <li><a (click)="gotoIssueNewBook()" class="dropdown-item">ISSUE NEW BOOK</a></li>
+              <li><a (click)="gotoManageIssuedBooks()" class="dropdown-item">MANAGE ISSUED BOOKS</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">REG STUDENTS</a>
+            <a (click)="gotoRegStudents()" class="nav-link">REG STUDENTS</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">CHANGE PASSWORD</a>
+            <a (click)="gotoAdminChangePassword()" class="nav-link">CHANGE PASSWORD</a>
           </li>
         </ul>
     </div>
